@@ -1,4 +1,25 @@
-﻿
+﻿#container #header h1
+{
+  color:black;
+  
+  text-shadow:
+        1px -1px 0 #767676,
+        -1px 2px 1px #767474,
+        -2px 4px 1px #7b7a7a,
+        -3px 6px 1px #828181,
+        -4px 8px 1px #8b8a89,
+        -5px 10px 1px #949392,
+        -6px 12px 1px #9e9c9c,
+        -7px 14px 1px #a8a6a6,
+        -8px 16px 1px #b2b1b0,
+        -9px 18px 1px #bcbbba,
+        -10px 20px 1px #c6c4c4,
+        -11px 22px 1px #cfcdcd,
+        -12px 24px 1px #d8d6d5,
+        -13px 26px 1px #dfdddc,
+        -14px 28px 1px #e4e3e2; 
+  
+}
 h4 {
 	color:green;
 	margin:0;
