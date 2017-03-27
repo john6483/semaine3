@@ -20,6 +20,12 @@
         -14px 28px 1px #e4e3e2;
 
 }
+li {
+
+list-style-type: lower-roman;
+
+}
+
 h4 {
 	color:green;
 	margin:0;
@@ -116,7 +122,7 @@ hr {
 {
    /* width: 200px;
     height: 160px; */
-	
+
     position: absolute;
     top: 200px;
     left: 500px;
@@ -127,6 +133,5 @@ hr {
     font-family: arial, sans-serif;
     transition: 2s;
 	backface-visibility: hidden; /* Permet d'éviter de voir le bloc de dos */
-	
-}
 
+}
