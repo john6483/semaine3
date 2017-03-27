@@ -21,10 +21,8 @@
 
 }
 
-p {
-
-  color:red;
-}
+li p {
+  color: red;
 
 li {
 
