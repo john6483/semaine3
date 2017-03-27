@@ -20,6 +20,12 @@
         -14px 28px 1px #e4e3e2;
 
 }
+
+p {
+
+  color:red;
+}
+
 li {
 
 list-style-type: lower-roman;
