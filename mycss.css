@@ -1,7 +1,7 @@
 ﻿#container #header h1
 {
   color:black;
-  
+
   text-shadow:
         1px -1px 0 #767676,
         -1px 2px 1px #767474,
@@ -17,8 +17,8 @@
         -11px 22px 1px #cfcdcd,
         -12px 24px 1px #d8d6d5,
         -13px 26px 1px #dfdddc,
-        -14px 28px 1px #e4e3e2; 
-  
+        -14px 28px 1px #e4e3e2;
+
 }
 h4 {
 	color:green;
@@ -78,3 +78,55 @@ body {
 	padding: 10px;
 
 }
+/* effet 3d*/
+#devant
+{
+    z-index: 100;
+    /*background-image: linear-gradient(white, green); */
+	background-image: url(images/bbjohn.jpg);
+}
+
+#derriere
+{
+    z-index: 50;
+    /*background-image: linear-gradient(white, red); */
+    transform: rotateY(-180deg); /* Celui-ci est retourné par défaut */
+	background-image: url(images/bbzag.jpg);
+}
+
+#devant:hover
+{
+    transform: rotateY(360deg); /* On passe de 0 à 360° : tour complet */
+}
+
+/*
+Astuce :
+Lorsqu'on survole le bloc devant, on applique une rotation au bloc derriere
+*/
+#devant:hover + #derriere
+{
+    transform: rotateY(180deg);  /* On passe de -180° à 180° : tour complet */
+}
+hr {
+	clear:both;
+}
+
+/* #container #content #main #devant */
+#footer2
+{
+   /* width: 200px;
+    height: 160px; */
+	
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    opacity: 1;
+    border: 2px solid #444;
+    text-align: left;
+    font-size: 1.3em;
+    font-family: arial, sans-serif;
+    transition: 2s;
+	backface-visibility: hidden; /* Permet d'éviter de voir le bloc de dos */
+	
+}
+
